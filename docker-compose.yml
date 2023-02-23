@@ -1,0 +1,10 @@
+version: "3"
+services:
+  gitbucket:
+    container_name: gitbucket
+    build: .
+    expose:
+        - "8080"
+        - "29418"
+    ports:
+      - "9009:8080"
